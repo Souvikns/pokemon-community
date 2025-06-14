@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pokemon_community/screens/auth.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -39,7 +40,8 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
       ),
-      home: const MyHomePage(title: 'Pokemon Community'),
+      home: const AuthScreen(),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
